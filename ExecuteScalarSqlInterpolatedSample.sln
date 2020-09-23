@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30516.212
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "README", "README", "{E7805DF5-4BAA-4AC5-91DB-30DCF6F74BB9}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExecuteScalarSqlInterpolatedSample", "ExecuteScalarSqlInterpolatedSample\ExecuteScalarSqlInterpolatedSample.csproj", "{9DA06FD1-DCB9-4612-A132-E3FDFF07BF6C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DA06FD1-DCB9-4612-A132-E3FDFF07BF6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DA06FD1-DCB9-4612-A132-E3FDFF07BF6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DA06FD1-DCB9-4612-A132-E3FDFF07BF6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DA06FD1-DCB9-4612-A132-E3FDFF07BF6C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52A1A7AE-AC6A-47FC-B4E9-7CB23EE12BE9}
+	EndGlobalSection
+EndGlobal
