@@ -2,14 +2,12 @@
 using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.EntityFrameworkCore.Storage;
 
 namespace ExecuteScalarInterpolatedSample
 {
     public static class EFCoreExtensions
     {
-#pragma warning disable EF1001 // Internal EF Core API usage.
         public static async Task<T> ExecuteScalarSqlInterpolatedAsync<T>(this DatabaseFacade database, FormattableString sql, CancellationToken cancellationToken = default)
         {
             // https://github.com/dotnet/efcore/issues/11624
@@ -35,6 +33,5 @@ namespace ExecuteScalarInterpolatedSample
                         cancellationToken);
             }
         }
-#pragma warning restore EF1001 // Internal EF Core API usage.    
     }
 }
