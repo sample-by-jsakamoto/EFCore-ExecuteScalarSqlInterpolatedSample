@@ -17,11 +17,14 @@ namespace ExecuteScalarInterpolatedSample
 
             try
             {
-                var name = "Foo";
-                var id = await db.Database.ExecuteScalarSqlInterpolatedAsync<int>(
-                    $"INSERT INTO People(Name) OUTPUT INSERTED.Id VALUES({name})");
+                var names = new[] { "Foo", "Bar", "Fizz", "Buzz" };
+                foreach (var name in names)
+                {
+                    var id = await db.Database.ExecuteScalarSqlInterpolatedAsync<int>(
+                        $"INSERT INTO People(Name) OUTPUT INSERTED.Id VALUES({name})");
 
-                Console.WriteLine($"The returned id is: {id}");
+                    Console.WriteLine($"The id of \"{name}\" is: {id}");
+                }
             }
             finally
             {
